@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user.scalable=yes" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>♟️Chess Survey♟️</h1>
+    </header>
+
+    <form>
+      <fieldset>
+        <legend>Name and Email</legend>
+        <label for="fname">First Name</label>
+        <br /><input type="text" id="fname" name="fname" /> <br /><br /><label
+          for="lname"
+          >Last Name</label
+        >
+        <br /><input type="text" id="lname" name="lname" /> <br /><br /><label
+          for="email"
+          >Email</label
+        >
+        <br /><input type="text" id="email" name="email" /> <br /><br /><label
+          for="date-of-birth"
+          >Date of Birth</label
+        >
+        <br /><input type="date" id="date-of-birth" name="date-of-birth" />
+      </fieldset>
+
+      <br />
+      <fieldset>
+        <legend>Survey</legend>
+        <p>Are you new to chess?</p>
+        <input type="radio" id="yes" name="new" value="yes" />
+        <label for="yes">Yes</label>
+        <br /><input type="radio" id="no" name="new" value="no" />
+        <label for="no">No</label>
+
+        <p>Do you have a rating?</p>
+        <input type="radio" id="yes" name="rating" value="yes" />
+        <label for="yes">Yes</label>
+        <br /><input type="radio" id="no" name="rating" value="no" />
+        <label for="no">No</label>
+        <br /><input
+          type="radio"
+          id="dont-know"
+          name="rating"
+          value="dont-know" />
+        <label for="dont-know">I don't know</label>
+
+        <p>If so, what is your rating?</p>
+        <input type="radio" id="low" name="amount" value="low" />
+        <label for="low">0-600</label>
+        <br /><input type="radio" id="medium" name="amount" value="medium" />
+        <label for="medium">600-1200</label>
+        <br /><input type="radio" id="high" name="amount" value="high" />
+        <label for="high">1200+</label>
+
+        <br /><br /><label for="pieces"
+          >Choose your favorite chess piece:</label
+        >
+        <select name="pieces" id="pieces">
+          <option value="pawn">Pawn</option>
+          <option value="knight">Knight</option>
+          <option value="bishop">Bishop</option>
+          <option value="rook">Rook</option>
+          <option value="queen">Queen</option>
+          <option value="king">King</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <label for="opinion"
+          >What are your thoughts about chess and our website?</label
+        >
+        <br /><textarea
+          name="opinion"
+          id="opinion"
+          cols="200"
+          rows="25"></textarea>
+      </fieldset>
+
+      <br /><br /><input type="reset" value="Reset" /> <br /><br /><input
+        type="submit"
+        value="Submit" />
+    </form>
+  </body>
+</html>
